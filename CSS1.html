@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 20px;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px 0px gray;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .gender {
+            display: flex;
+            gap: 10px;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body bgcolor ="lightgreen">
+
+
+    <div class="container">
+        <h2>Student Registration Form</h2>
+        <form action="#" method="post">
+            
+            <label for="regno">Reg No:</label>
+            <input type="text" id="regno" name="regno" required>
+            
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+            
+            <label for="cell">Cell No:</label>
+            <input type="tel" id="cell" name="cell" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label>Gender:</label>
+            <div class="gender">
+                <input type="radio" id="male" name="gender" value="Male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label>
+            </div>
+            
+            <label for="branch">Branch:</label>
+            <select id="branch" name="branch">
+                <option value="">-- Select Branch --</option>
+                <option value="CSE">CSE</option>
+                <option value="ECE">ECE</option>
+                <option value="MEC">MEC</option>
+                <option value="CIVIL">CIVIL</option>
+                <option value="IT">IT</option>
+                <option value="EEE">EEE</option>
+                <option value="MBA">MBA</option>
+                <option value="M.Tech">M.Tech</option>
+            </select>
+            
+            <label for="referral">Referral Code:</label>
+            <input type="text" id="referral" name="referral">
+            
+            <label for="state">State:</label>
+            <select id="state" name="state">
+                <option value="">-- Choose State --</option>
+                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                <option value="Telangana">Telangana</option>
+                <option value="Tamil Nadu">Tamil Nadu</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="Maharashtra">Maharashtra</option>
+            </select>
+            
+            <label for="district">District:</label>
+            <select id="district" name="district">
+                <option value="">-- Choose District --</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Visakhapatnam">Visakhapatnam</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Bangalore">Bangalore</option>
+                <option value="Mumbai">Mumbai</option>
+            </select>
+            
+            <label for="college">College:</label>
+            <input type="text" id="college" name="college" required>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+</body>
+</html>
